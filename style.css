@@ -1,197 +1,124 @@
 /* css reset */
-html, body, h1, h2, ul, p { 
-  margin: 0;
-  padding: 0;
-}
-
-ul, ol {
-  list-style-type: none;
-}
-
-em {
-  font-style: normal;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
-/* 코드 */
-body {
-    background-color:#ccc;
-}
-
-.wrap {
+html, body, ul, p, h1 { 
+    margin: 0;
+    padding: 0;
+  }
   
+button {
+    padding:0;
+    border:none;
 }
 
-.header {
-  position: relative;
-  background-color:#fff;
-  text-align:center;
-}
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* code */
+  .body {
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    background-color: #eee;
+  }
+  
+  .wrap {
+    width: 600px;
+    height: 340px;
+    margin: 56px auto 0;
+    background-color: steelblue;
+  }
+  
+  .list_nav {
+    overflow: hidden;
+  }
+  
+  .list_nav .item {
+    float: left;
+    width: 200px;
+    background-color: #111;
+    text-align:center;
+  }
+  
+  /* hover 되었을 때, 배경 색상이 #333으로..*/
+  .list_nav .item:hover {
+    background-color: #333;
+  }
+  
+  /*.list_nav .item:hover .link {
+      color:blue;
+  }*/
 
-.header .title .icon {
-  display: inline-block;
-  width: 93px;
-  height: 13px;
-  background-image: url(./img/logo_naver_tv.png);
-  background-size:cover;
-}
+  .list_nav .item .link {
+    display: block;
+    /* padding: 13px 0; */
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+  }
 
-.header .link {
-  padding: 18px 10px 15px;
-  display:inline-block;
-  font-size:0px;
-}
+  .content {
+      overflow: hidden;
+      background-image: url(./img/bg_civilwar.jpeg);
+      background-size: 100%;
+      background-position: -120px -24px;
+      background-repeat: no-repeat;
+      background-color:#0a0a0a;
+  }
 
-.header .btn_menu {
-  position: absolute;
-  top: 0px;
-  left: 11px;
-  display:inline-block;
-  padding:15px 10px 14px;
-  font-size: 0px;
-}
+  .content .info_area {
+      float:right;
+      width:300px;
+      height:300px;
+  }
 
-.header .btn_menu .icon {
-  display:inline-block;
-  width: 18px;
-  height: 18px;
-  background-image: url(./img/icon_menu.png);
-  background-size: cover;
-}
+  .title{
+      margin-top:41px;
+      font-size:19px;
+      line-height:23px;
+      font-weight:bold;
+      color:#fff;
+  }
 
-.header .btn_search {
-  position: absolute;
-  top: 0px;
-  right: 11px;
-  display:inline-block;
-  padding: 15px 10px 14px;
-  font-size: 0px;
-}
+  .desc {
+      margin-top:16px;
+      font-size:16px;
+      line-height:22px;
+      font-weight:bold;
+      color:#fff;
+  }
 
-.header .btn_search .icon {
-  display:inline-block;
-  width: 18px;
-  height: 18px;
-  background-image: url(./img/icon_search.png);
-  background-size: cover;
-}
+  .btn_watch {
+      width:120px;
+      height:34px;
+      margin-top:24px;
+      border-radius:17px;
+      color:#fff;
+      font-size: 12px;
+      font-weight: 500;
+      background-color:#c62828;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
 
-.list_navi {
-  overflow:hidden;
-  border-top: 1px solid rgba (0,0,0,0.12);
-  background-color: #fff;
-}
+  .btn_watch:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
 
-.list_navi .item {
-  float: left;
-  width: 25%;
-  background-color: slategray;
-  text-align:center;
-}
+  .list_detail {
+   margin-top: 50px;
+   font-size: 0;
+  }
 
-.list_navi .item .is_active .link {
-  color: #00cb71;
-  font-weight: 700;
-}
-
-.list_navi .item .link {
-  display:block;
-  padding: 13px 0 12px;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-/* 배너 부분 */
-.banner {
-  position: relative;
-  height: 214px;
-  background-image: url(./img/banner_3.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.mask {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.3);
-  /*background-color: #000;
-  opacity: 0.3;*/
-}
-
-.banner .info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-left: 12px;
-  padding-bottom: 18px;
-  background-color: #000;
-  opacity: 0.5;
-}
-
-.channel {
-  font-size: 0;
-}
-
-.channel .logo {
-  display: inline-block;
-  width: 27px;
-  height: 27px;
-  margin-right: 3px;
-  background-color: #00cb71;
-  vertical-align: top;
-}
-
-.channel .txt {
-  display: inline-block;
-  margin-top: 5px;
-  font-size: 15px;
-  font-weight: 500;
-  color:#fff;
-  vertical-align: top;
-}
-
-.banner .info .title {
-  margin-top: 5px;
-  font-size: 21px;
-  font-weight: 600;
-  color: #fff;
-}
-
-.status .play{
-  font-size:0;
-}
-
-.status .play .icon{
-  display: inline-block;
-  width: 11px;
-  height: 12px;
-  vertical-align: top;
-  background-color: orange;
-}
-
-.status .play .num {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 12px;
-  margin-top: 1px;
-  margin-left: 3px;
-  color:#fff;
-}
-
-.status .like {
-
-}
-
-.status .like .num {
-
+  .list_detail .item {
+   display:inline-block;
+   width:100px;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 19px;
+   color:#fff;
+   vertical-align: top;
 }
