@@ -1,0 +1,197 @@
+/* css reset */
+html, body, h1, h2, ul, p { 
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* 코드 */
+body {
+    background-color:#ccc;
+}
+
+.wrap {
+  
+}
+
+.header {
+  position: relative;
+  background-color:#fff;
+  text-align:center;
+}
+
+.header .title .icon {
+  display: inline-block;
+  width: 93px;
+  height: 13px;
+  background-image: url(./img/logo_naver_tv.png);
+  background-size:cover;
+}
+
+.header .link {
+  padding: 18px 10px 15px;
+  display:inline-block;
+  font-size:0px;
+}
+
+.header .btn_menu {
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  display:inline-block;
+  padding:15px 10px 14px;
+  font-size: 0px;
+}
+
+.header .btn_menu .icon {
+  display:inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(./img/icon_menu.png);
+  background-size: cover;
+}
+
+.header .btn_search {
+  position: absolute;
+  top: 0px;
+  right: 11px;
+  display:inline-block;
+  padding: 15px 10px 14px;
+  font-size: 0px;
+}
+
+.header .btn_search .icon {
+  display:inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(./img/icon_search.png);
+  background-size: cover;
+}
+
+.list_navi {
+  overflow:hidden;
+  border-top: 1px solid rgba (0,0,0,0.12);
+  background-color: #fff;
+}
+
+.list_navi .item {
+  float: left;
+  width: 25%;
+  background-color: slategray;
+  text-align:center;
+}
+
+.list_navi .item .is_active .link {
+  color: #00cb71;
+  font-weight: 700;
+}
+
+.list_navi .item .link {
+  display:block;
+  padding: 13px 0 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* 배너 부분 */
+.banner {
+  position: relative;
+  height: 214px;
+  background-image: url(./img/banner_3.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+  /*background-color: #000;
+  opacity: 0.3;*/
+}
+
+.banner .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 12px;
+  padding-bottom: 18px;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.channel {
+  font-size: 0;
+}
+
+.channel .logo {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 3px;
+  background-color: #00cb71;
+  vertical-align: top;
+}
+
+.channel .txt {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color:#fff;
+  vertical-align: top;
+}
+
+.banner .info .title {
+  margin-top: 5px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.status .play{
+  font-size:0;
+}
+
+.status .play .icon{
+  display: inline-block;
+  width: 11px;
+  height: 12px;
+  vertical-align: top;
+  background-color: orange;
+}
+
+.status .play .num {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-top: 1px;
+  margin-left: 3px;
+  color:#fff;
+}
+
+.status .like {
+
+}
+
+.status .like .num {
+
+}
